@@ -1,6 +1,6 @@
 # ⚡ Varsuite Media Group Limited ⚡
 
-Welcome to **Varsuite Media Group Limited**, your go-to digital agency for cutting-edge solutions. We specialize in **application development**, **software engineering**, **web development**, and **digital marketing**—delivering strategies that elevate brands in the digital space.
+Welcome to **Varsuite Media Group Limited**, your go-to digital agency for cutting-edge solutions. We specialise in **application development**, **software engineering**, **web development**, and **digital marketing**—delivering strategies that elevate brands in the digital space.
 
 ---
 
