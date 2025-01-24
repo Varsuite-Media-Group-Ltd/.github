@@ -27,6 +27,10 @@
       "automerge": true
     },
     {
+      "updateTypes": ["major"],
+      "automerge": false
+    },
+    {
       "matchDepTypes": ["devDependencies"],
       "automerge": true
     },
