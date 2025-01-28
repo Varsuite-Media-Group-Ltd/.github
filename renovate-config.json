@@ -9,7 +9,6 @@
     ":automergeRequireAllStatusChecks",
     ":combinePatchMinorReleases",
     ":prConcurrentLimit10",
-    ":prHourlyLimit2",
     ":prImmediately",
     ":rebaseStalePrs",
     ":renovatePrefix",
