@@ -6,6 +6,7 @@
     "docker:disable",
     "group:allNonMajor",
     "security:minimumReleaseAgeNpm",
+    "security:openssf-scorecard",
     ":automergeMinor",
     ":automergePr",
     ":automergeRequireAllStatusChecks",
