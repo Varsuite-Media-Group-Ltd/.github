@@ -5,6 +5,7 @@
     "config:recommended",
     "docker:disable",
     "group:allNonMajor",
+    "schedule:weekly",
     "security:minimumReleaseAgeNpm",
     "security:openssf-scorecard",
     ":automergeMinor",
@@ -84,7 +85,6 @@
   "platformAutomerge": true,
   "rangeStrategy": "update-lockfile",
   "rollbackPrs": true,
-  "schedule": ["* 9-17 * * 1-5"],
   "timezone": "Europe/London",
   "transitiveRemediation": true,
   "vulnerabilityAlerts": {
