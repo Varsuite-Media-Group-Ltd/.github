@@ -25,7 +25,9 @@
   "ignoreDeps": [
     "mariadb"
   ],
+  "internalChecksFilter": "strict",
   "labels": ["dependencies"],
+  "minimumReleaseAge": "3 days",
   "packageRules": [
     {
       "updateTypes": ["minor", "patch", "digest"],
@@ -79,6 +81,7 @@
     }
   ],
   "platformAutomerge": true,
+  "prCreation": "not-pending",
   "rangeStrategy": "update-lockfile",
   "rollbackPrs": true,
   "timezone": "Europe/London",
