@@ -8,11 +8,12 @@
     ":automergePr",
     ":automergeRequireAllStatusChecks",
     ":combinePatchMinorReleases",
+    ":configMigration",
     ":prConcurrentLimit10",
     ":prImmediately",
     ":rebaseStalePrs",
     ":renovatePrefix",
-    ":separateMultipleMajorReleases"
+    ":separateMultipleMajorReleases",
   ],
   "additionalReviewers": ["Jamesking56"],
   "dependencyDashboardAutoclose": true,
