@@ -6,7 +6,6 @@
     "docker:disable",
     "group:allNonMajor",
     "helpers:pinGitHubActionDigestsToSemver",
-    "schedule:weekly",
     "security:minimumReleaseAgeNpm",
     "security:openssf-scorecard",
     ":automergeMinor",
@@ -84,6 +83,7 @@
   "prCreation": "not-pending",
   "rangeStrategy": "update-lockfile",
   "rollbackPrs": true,
+  "schedule": ["* 8-16 * * 1"],
   "timezone": "Europe/London",
   "transitiveRemediation": true,
   "vulnerabilityAlerts": {
