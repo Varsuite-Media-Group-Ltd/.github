@@ -19,7 +19,6 @@
     ":renovatePrefix",
     ":separateMultipleMajorReleases",
   ],
-  "additionalReviewers": ["Jamesking56"],
   "constraints": {
     "php": "<= 8.4.15"
   },
@@ -84,6 +83,7 @@
   ],
   "platformAutomerge": true,
   "rangeStrategy": "update-lockfile",
+  "reviewers": ["team:development"],
   "rollbackPrs": true,
   "schedule": ["* 8-16 * * 1"],
   "timezone": "Europe/London",
