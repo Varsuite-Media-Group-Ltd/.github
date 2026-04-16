@@ -10,7 +10,6 @@
     "security:openssf-scorecard",
     ":automergeMinor",
     ":automergePr",
-    ":automergeRequireAllStatusChecks",
     ":combinePatchMinorReleases",
     ":configMigration",
     ":prConcurrentLimit10",
