@@ -46,7 +46,7 @@
       "enabled": false
     },
     {
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^larastan/larastan",
         "^phpstan/"
       ],
@@ -59,19 +59,19 @@
       "enabled": false
     },
     {
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^@inertiajs/inertia.*$"
       ],
       "groupName": "inertia"
     },
     {
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^pestphp/.*$"
       ],
       "groupName": "pest"
     },
     {
-      "packagePatterns": [
+      "matchPackagePatterns": [
         "^vite",
         "laravel-vite-plugin",
         "^@vitejs/.*$"
