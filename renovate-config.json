@@ -79,6 +79,14 @@
       "groupName": "vite",
       "groupSlug": "vite",
       "separateMajorMinor": false
+    },
+    {
+      "matchPackageNames": [
+        "prettier-plugin-tailwindcss",
+        "prettier-plugin-blade"
+      ],
+      "groupName": "prettier plugins",
+      "separateMajorMinor": false
     }
   ],
   "platformAutomerge": true,
