@@ -77,7 +77,8 @@
         "^@vitejs/.*$"
       ],
       "groupName": "vite",
-      "groupSlug": "vite"
+      "groupSlug": "vite",
+      "separateMajorMinor": false
     }
   ],
   "platformAutomerge": true,
