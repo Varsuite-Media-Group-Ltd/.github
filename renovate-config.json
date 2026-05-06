@@ -51,7 +51,8 @@
         "^phpstan/"
       ],
       "groupName": "phpstan packages",
-      "groupSlug": "phpstan"
+      "groupSlug": "phpstan",
+      "separateMajorMinor": false
     },
     {
       "matchPackagePatterns": ["laravel/framework"],
@@ -62,13 +63,15 @@
       "matchPackagePatterns": [
         "^@inertiajs/inertia.*$"
       ],
-      "groupName": "inertia"
+      "groupName": "inertia",
+      "separateMajorMinor": false
     },
     {
       "matchPackagePatterns": [
         "^pestphp/.*$"
       ],
-      "groupName": "pest"
+      "groupName": "pest",
+      "separateMajorMinor": false
     },
     {
       "matchPackagePatterns": [
