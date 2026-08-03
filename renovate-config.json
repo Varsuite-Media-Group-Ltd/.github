@@ -16,7 +16,7 @@
     ":prImmediately",
     ":rebaseStalePrs",
     ":renovatePrefix",
-    ":separateMultipleMajorReleases",
+    ":separateMultipleMajorReleases"
   ],
   "constraints": {
     "php": "<= 8.4.15"
