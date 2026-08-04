@@ -8,7 +8,7 @@
     "helpers:pinGitHubActionDigestsToSemver",
     "security:minimumReleaseAgeNpm",
     "security:openssf-scorecard",
-    ":automergeMinor",
+    ":automergeMajor",
     ":automergePr",
     ":combinePatchMinorReleases",
     ":configMigration",
@@ -30,12 +30,12 @@
   "minimumReleaseAge": "3 days",
   "packageRules": [
     {
-      "updateTypes": ["minor", "patch", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
       "automerge": true
     },
     {
-      "updateTypes": ["major"],
-      "automerge": false
+      "matchUpdateTypes": ["major"],
+      "automerge": true
     },
     {
       "matchDepTypes": ["devDependencies"],
