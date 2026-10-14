@@ -98,6 +98,22 @@
       ],
       "groupName": "prettier plugins",
       "separateMajorMinor": false
+    },
+    {
+      "description": "These repositories have no real page or route tests yet, so a passing pipeline proves little. Their updates wait for review until baseline smoke tests are added, then the repository comes off this list.",
+      "matchRepositories": [
+        "Varsuite-Media-Group-Ltd/Highfield-laravel-new",
+        "Varsuite-Media-Group-Ltd/little-cheeky-laravel",
+        "Varsuite-Media-Group-Ltd/qr-code-dangers",
+        "Varsuite-Media-Group-Ltd/smallworld-it",
+        "Varsuite-Media-Group-Ltd/useit-telecom",
+        "Varsuite-Media-Group-Ltd/wws-consultancy",
+        "Varsuite-Media-Group-Ltd/LiveAgent",
+        "Varsuite-Media-Group-Ltd/cargarageltd",
+        "Varsuite-Media-Group-Ltd/designlabexperience-statamic"
+      ],
+      "automerge": false,
+      "labels": ["dependencies", "needs-review"]
     }
   ],
   "platformAutomerge": true,
