@@ -8,7 +8,6 @@
     "helpers:pinGitHubActionDigestsToSemver",
     "security:minimumReleaseAgeNpm",
     "security:openssf-scorecard",
-    ":automergeMajor",
     ":automergePr",
     ":combinePatchMinorReleases",
     ":configMigration",
@@ -40,11 +39,14 @@
       "automerge": true
     },
     {
+      "description": "A major version can change behaviour the tests do not cover, and merging to main deploys. Majors open as PRs for a person to review and merge.",
       "matchUpdateTypes": ["major"],
-      "automerge": true
+      "automerge": false,
+      "labels": ["dependencies", "major"]
     },
     {
       "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["minor", "patch", "digest"],
       "automerge": true
     },
     {
