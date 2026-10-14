@@ -30,6 +30,12 @@
   "minimumReleaseAge": "3 days",
   "packageRules": [
     {
+      "description": "Varsuite's own pipeline is referenced at @v1, a tag scripts/release.sh moves on each release. Pinning it to a commit would freeze a repository on an old pipeline, so Renovate leaves it alone.",
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["Varsuite-Media-Group-Ltd/github-actions"],
+      "enabled": false
+    },
+    {
       "matchUpdateTypes": ["minor", "patch", "digest"],
       "automerge": true
     },
