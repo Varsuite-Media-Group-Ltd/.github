@@ -98,17 +98,6 @@
       ],
       "groupName": "prettier plugins",
       "separateMajorMinor": false
-    },
-    {
-      "description": "These repositories have no CI workflow yet, so their tests never run on an update and a merge would be unchecked. Their updates wait for review until scripts/rollout.sh adds the pipeline, then the repository comes off this list.",
-      "matchRepositories": [
-        "Varsuite-Media-Group-Ltd/Highfield-laravel-new",
-        "Varsuite-Media-Group-Ltd/qr-code-dangers",
-        "Varsuite-Media-Group-Ltd/smallworld-it",
-        "Varsuite-Media-Group-Ltd/wws-consultancy"
-      ],
-      "automerge": false,
-      "labels": ["dependencies", "needs-review"]
     }
   ],
   "platformAutomerge": true,
