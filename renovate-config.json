@@ -85,7 +85,8 @@
       "matchPackagePatterns": [
         "^vite",
         "^laravel-vite-plugin",
-        "^@vitejs/.*$"
+        "^@vitejs/.*$",
+        "^@vitest/.*$"
       ],
       "groupName": "vite",
       "groupSlug": "vite",
