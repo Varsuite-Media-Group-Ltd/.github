@@ -26,9 +26,15 @@
   ],
   "internalChecksFilter": "strict",
   "labels": ["dependencies"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "schedule": ["* 8-16 * * 1"]
+  },
   "minimumReleaseAge": "3 days",
   "npmrc": "allow-remote=all",
   "npmrcMerge": true,
+  "osvVulnerabilityAlerts": true,
   "packageRules": [
     {
       "description": "Varsuite's own pipeline is referenced at @v1, a tag scripts/release.sh moves on each release. Pinning it to a commit would freeze a repository on an old pipeline, so Renovate leaves it alone.",
