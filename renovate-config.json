@@ -27,9 +27,11 @@
   "internalChecksFilter": "strict",
   "labels": ["dependencies"],
   "lockFileMaintenance": {
+    "description": "Refreshes transitive packages (Composer has no transitive remediation). It ignores minimumReleaseAge, so it never merges itself: needs-review holds it for a person.",
     "enabled": true,
-    "automerge": true,
-    "schedule": ["* 8-16 * * 1"]
+    "automerge": false,
+    "labels": ["dependencies", "needs-review"],
+    "schedule": ["* 8-16 1-7 * 1"]
   },
   "minimumReleaseAge": "3 days",
   "npmrc": "allow-remote=all",
