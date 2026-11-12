@@ -26,9 +26,17 @@
   ],
   "internalChecksFilter": "strict",
   "labels": ["dependencies"],
+  "lockFileMaintenance": {
+    "description": "Refreshes transitive packages (Composer has no transitive remediation). It ignores minimumReleaseAge, so it never merges itself: needs-review holds it for a person.",
+    "enabled": true,
+    "automerge": false,
+    "labels": ["dependencies", "needs-review"],
+    "schedule": ["* 8-16 1-7 * 1"]
+  },
   "minimumReleaseAge": "3 days",
   "npmrc": "allow-remote=all",
   "npmrcMerge": true,
+  "osvVulnerabilityAlerts": true,
   "packageRules": [
     {
       "description": "Varsuite's own pipeline is referenced at @v1, a tag scripts/release.sh moves on each release. Pinning it to a commit would freeze a repository on an old pipeline, so Renovate leaves it alone.",
