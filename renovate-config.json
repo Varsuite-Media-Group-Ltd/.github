@@ -21,6 +21,13 @@
     "php": "8.5.*"
   },
   "dependencyDashboardAutoclose": true,
+  "hostRules": [
+    {
+      "matchHost": "github.com",
+      "hostType": "git-tags",
+      "token": "{{ secrets.BACKUP_CLIENT_READ }}"
+    }
+  ],
   "ignoreDeps": [
     "mariadb"
   ],
