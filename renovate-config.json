@@ -85,19 +85,36 @@
       "separateMajorMinor": false
     },
     {
+      "description": "Pest and its plugins move together. Majors stay separate from minors, so a Pest major (which needs a newer Laravel) cannot hold back the minor updates.",
       "matchPackagePatterns": [
         "^pestphp/.*$"
       ],
-      "groupName": "pest",
-      "separateMajorMinor": false
+      "groupName": "pest"
+    },
+    {
+      "description": "A Pest major needs a newer Laravel major, which is a planned upgrade of its own. It waits on the Dependency Dashboard instead of opening a PR that cannot pass.",
+      "matchPackagePatterns": [
+        "^pestphp/.*$"
+      ],
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "Pest pins PHPUnit to one exact release, so a separate PHPUnit update can never install. PHPUnit moves when Pest moves, and through the monthly lock file maintenance.",
+      "matchManagers": ["composer"],
+      "matchPackageNames": ["phpunit/phpunit"],
+      "enabled": false
     },
     {
       "matchPackagePatterns": [
         "^vite",
         "^laravel-vite-plugin",
         "^@vitejs/.*$",
-        "^@vitest/.*$"
+        "^@vitest/.*$",
+        "^@rolldown/",
+        "^fontaine$"
       ],
+      "description": "Vite, its plugins and their peer packages (@rolldown/plugin-babel for @vitejs/plugin-react, fontaine for laravel-vite-plugin) update in one PR, so a peer is never bumped past what its plugin accepts.",
       "groupName": "vite",
       "groupSlug": "vite",
       "separateMajorMinor": false
@@ -109,6 +126,21 @@
       ],
       "groupName": "prettier plugins",
       "separateMajorMinor": false
+    },
+    {
+      "description": "DiceBear styles require the same major of @dicebear/core, so the family updates in one PR.",
+      "matchPackagePatterns": [
+        "^@dicebear/"
+      ],
+      "groupName": "dicebear"
+    },
+    {
+      "description": "DiceBear 10 no longer ships the separate style packages, so moving to it is a code change rather than a version bump. It waits on the Dependency Dashboard.",
+      "matchPackagePatterns": [
+        "^@dicebear/"
+      ],
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
     }
   ],
   "platformAutomerge": true,
