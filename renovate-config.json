@@ -112,9 +112,10 @@
         "^@vitejs/.*$",
         "^@vitest/.*$",
         "^@rolldown/",
-        "^fontaine$"
+        "^fontaine$",
+        "^@voidzero-dev/vite-plus"
       ],
-      "description": "Vite, its plugins and their peer packages (@rolldown/plugin-babel for @vitejs/plugin-react, fontaine for laravel-vite-plugin) update in one PR, so a peer is never bumped past what its plugin accepts.",
+      "description": "Vite, its plugins and their peer packages (@rolldown/plugin-babel for @vitejs/plugin-react, fontaine for laravel-vite-plugin) update in one PR, so a peer is never bumped past what its plugin accepts. Vite+ projects alias vite to @voidzero-dev/vite-plus-core, which must move with vite-plus in the same PR.",
       "groupName": "vite",
       "groupSlug": "vite",
       "separateMajorMinor": false
