@@ -92,8 +92,10 @@
       "separateMajorMinor": false
     },
     {
+      "description": "Pest 5 needs PHPUnit 13, so the two have to move together or neither pull request can pass.",
       "matchPackagePatterns": [
-        "^pestphp/.*$"
+        "^pestphp/.*$",
+        "^phpunit/phpunit$"
       ],
       "groupName": "pest",
       "separateMajorMinor": false
